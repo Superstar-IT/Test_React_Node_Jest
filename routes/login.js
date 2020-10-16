@@ -6,7 +6,6 @@ const Password = 'Password'
 
 /* GET users listing. */
 router.post('/', function(req, res, next) {
-  console.log("Requeset Body: ", req.body)
   if(!req.body.username && !req.body.password)
     res.status(403).send("Provide Username and Password")
   else if(!req.body.username || req.body.username.length < 1)

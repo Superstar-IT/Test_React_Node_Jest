@@ -7,6 +7,8 @@ module.exports = {
         '**/?(*.)(spec|test).js?(x)',
     ],
     transform: {
-        '^.+\\.m?jsx?$': 'babel-jest',
+        '^.+\\.m?js?$': 'babel-jest',
     },
+    collectCoverage: true,
+    collectCoverageFrom: ['client/src/**/*.js'],
 }

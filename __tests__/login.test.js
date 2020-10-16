@@ -13,7 +13,7 @@ afterEach(() => {
 })
 
 describe('Login API Test', () => {
-    it('should require username and password', async (done) => {
+    test('should require username and password', async (done) => {
 
         await request
             .post('/api/login')
